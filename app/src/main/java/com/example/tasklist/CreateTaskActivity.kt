@@ -29,8 +29,7 @@ class CreateTaskActivity : AppCompatActivity() {
                 description = binding.etDescription.text.toString()
             )
             viewModel.setTask(data)
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 }
